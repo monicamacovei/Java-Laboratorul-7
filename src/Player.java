@@ -4,4 +4,7 @@ public class Player implements Runnable{
     public Player(String name) {
         this.name = name;
     }
+    public void run(Board board) {
+        board.removeToken();
+    }
 }
